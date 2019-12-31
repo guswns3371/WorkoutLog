@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".RegisterActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:title="SIGN IN"
+            app:titleMarginStart="10dp"
+            app:titleTextColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/rUsernametxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toTopOf="@+id/toolbar2"
+            tools:layout_editor_absoluteX="29dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/rIDtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="ID"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/rIDcheckbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+
+                android:text="중복확인" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/rPasswordtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@+id/rUsernametxt"
+            tools:layout_editor_absoluteX="29dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/rEmailtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintTop_toBottomOf="@+id/rPasswordtxt"
+                tools:layout_editor_absoluteX="29dp" />
+
+            <Button
+                android:id="@+id/rEmailcheckbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="이메일 인증"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/rEmailchecktxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="인증번호"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/Registerbtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="37dp"
+            android:background="#ededed"
+            android:text="SIGN IN"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@+id/rEmailtxt"
+            tools:layout_editor_absoluteX="29dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

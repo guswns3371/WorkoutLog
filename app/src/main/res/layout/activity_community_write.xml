@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Community_writeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/community_writetb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:title="글쓰기"
+            app:titleTextColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/com_idtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="아이디"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/com_pwtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/com_nametxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="제목"
+            android:inputType="textPersonName" />
+        <View
+            android:layout_width="match_parent"
+            android:background="?attr/colorPrimary"
+            android:layout_height="2dp"/>
+
+        <EditText
+            android:id="@+id/com_contenttxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:ems="10"
+
+            android:gravity="top"
+            android:hint="내용"
+
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

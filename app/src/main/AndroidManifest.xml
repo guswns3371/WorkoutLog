@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.guswn.workoutlog">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- <uses-feature android:name="android.hardware.camera2" -->
+    <!-- android:required="true" /> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCkv4WAhj4iKS_Yvu1weMNNKBQSzrzEEmg" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout" />
+        <activity android:name=".Workout" />
+        <activity android:name=".Logs" />
+        <activity android:name=".Logs_Daily" />
+        <activity
+            android:name=".Exercise"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Exercise_abs" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.guswn.workoutlog"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".How_to_xx" />
+        <activity android:name=".Exercise_back" />
+        <activity android:name=".Exercise_biceps" />
+        <activity android:name=".Exercise_chest" />
+        <activity android:name=".Exercise_triceps" />
+        <activity android:name=".Exercise_shoulder" />
+        <activity android:name=".Exercise_legs" />
+        <activity android:name=".Custom_Dialog_Timer" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".InnerWorkout" />
+        <activity
+            android:name=".Timer_Fragment"
+            android:label="@string/title_activity_timer__fragment"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".CommunityActivity" />
+        <activity
+            android:name=".Community_Inner"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".Community_writeActivity" />
+        <activity android:name=".Community_Edit" />
+        <activity android:name=".LikedActivity" />
+        <activity
+            android:name=".How_to_xx_fragment"
+            android:label="@string/title_activity_how_to_xx_fragment"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".WorkoutStart"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".StatisticsActivity" />
+        <activity android:name=".SearchWorkout_Activity" />
+        <activity android:name=".StatisticsActivity_ALL" />
+        <activity android:name=".RankingActivity"></activity>
+    </application>
+
+</manifest>

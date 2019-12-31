@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/workout_start_cvA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#313333"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#383e4c"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/workstart_setnumtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="세트수"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/workstart_morebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="20dp"
+                        android:background="#00000000"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Weight (kg)"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:id="@+id/workstart_weight_minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_minus_24dp" />
+
+                        <EditText
+                            android:id="@+id/workstart_weight_edittxt"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/workstart_weight_plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_plus_24dp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#5b5b5b" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="Reps"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:id="@+id/workstart_reps_minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_minus_24dp" />
+
+                        <EditText
+                            android:id="@+id/workstart_reps_edit_txt"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/workstart_reps_plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_plus_24dp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/workstart_complete_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#00a00c"
+                    android:text="COMPLETE SET"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/workout_start_cvB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#383e4c"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/workstart_setnumB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="13dp"
+                    android:text="TextView"
+                    android:textColor="#c6c600"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/workstart_weight_repsB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

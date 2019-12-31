@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#373737"
+    tools:context=".SettingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/settingtb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:titleTextColor="#ffffff" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingtb">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/profilecv"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#303030"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Profile"
+                        android:textColor="#e3ff2b"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/profileedittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Edit"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#373737"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/contactcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#303030"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Contact and Support"
+                        android:textColor="#e3ff2b"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/contacttxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Help / Support / Other"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#373737"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="389dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/facebookcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#303030"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+
+                        android:layout_marginTop="15dp"
+                        android:text="Facebook"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text=" stayfitapp"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#373737" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/twittercv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#303030"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Twitter"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text=" @stayfitapp"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#373737" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/telcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#303030"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/teltxt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Tel"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/teltxt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text=" 02-1234-5678"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#373737" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/locationcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#303030"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/locationtxt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Location"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/locationtxt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="220, Sadang-ro, Dongjak-gu, Seoul, Republic of Korea"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#373737" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/logoutcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#303030"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="LOG OUT"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="326dp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

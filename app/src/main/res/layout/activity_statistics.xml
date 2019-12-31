@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatisticsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e1e1e1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/stat_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="#ffffff"
+            app:title="운동 분석"
+            android:theme="?attr/actionBarTheme" >
+
+            <Button
+                android:id="@+id/stat_allbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_marginStart="150dp"
+                android:background="#000000"
+                android:text="전체통계"
+                android:textColor="#ffffff" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/piechart">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

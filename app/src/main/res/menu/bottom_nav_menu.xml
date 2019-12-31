@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_history"
+        android:enabled="true"
+        android:icon="@drawable/ic_schedule_black_24dp"
+        android:title="History"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_workout"
+        android:enabled="true"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="Workout"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_exercise"
+        android:enabled="true"
+
+        android:icon="@drawable/ic_fitness_center_black_24dp"
+        android:title="Exercise"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_timer"
+        android:enabled="true"
+
+        android:icon="@drawable/ic_timer_black_24dp"
+        android:title="Timer"
+        app:showAsAction="always|withText"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/action_community"
+        android:enabled="true"
+
+        android:icon="@drawable/ic_speaker_notes_black_24dp"
+        android:title="Community"
+        app:showAsAction="always|withText"
+        tools:ignore="AppCompatResource" />
+
+</menu>

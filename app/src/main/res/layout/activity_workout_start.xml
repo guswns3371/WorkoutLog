@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutStart">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/workoutToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#363a3a"
+            app:titleTextColor="#ffffff"
+            android:minHeight="?attr/actionBarSize"
+            android:elevation="@dimen/activity_horizontal_margin"
+            android:theme="?attr/actionBarTheme" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/workoutRecycler"
+            android:layout_width="match_parent"
+            android:background="#3e4455"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

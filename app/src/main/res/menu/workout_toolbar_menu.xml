@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/shareBtn"
+        android:icon="@drawable/ic_fitness_center_black_24dp"
+        android:title="START"
+       app:showAsAction="always"  />
+    <item
+        android:id="@+id/doneBtn"
+        android:icon="@drawable/ic_done_all_black_24dp"
+        android:title="DONE"
+        android:visible="false"
+        app:showAsAction="always" />
+</menu>

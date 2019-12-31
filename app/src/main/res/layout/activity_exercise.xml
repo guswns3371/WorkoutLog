@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c2c2c"
+    tools:context=".Exercise"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/workout3"
+
+
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/exercise_tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#07070b"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="Exercise"
+            app:titleTextColor="#ffffff" />
+
+        <Button
+            android:id="@+id/ABS"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+
+            android:text="ABS"
+
+            app:layout_constraintBottom_toTopOf="@+id/BACK"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/BACK"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="87dp"
+
+                android:layout_weight="1"
+
+                android:text="BACK"
+                app:layout_constraintBaseline_toBaselineOf="@+id/BICEPS"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/BICEPS"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="84dp"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+
+                android:text="BICEPS"
+                app:layout_constraintBottom_toTopOf="@+id/CHEST"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ABS"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/CHEST"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="87dp"
+                android:layout_weight="1"
+
+
+                android:text="CHEST"
+                app:layout_constraintBaseline_toBaselineOf="@+id/TRICEPS"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/TRICEPS"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="84dp"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+
+                android:text="TRICEPS"
+                app:layout_constraintBottom_toTopOf="@+id/LEGS"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BICEPS"
+                app:layout_constraintVertical_bias="0.0" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/LEGS"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="87dp"
+                android:layout_weight="1"
+
+
+                android:text="LEGS"
+                app:layout_constraintBaseline_toBaselineOf="@+id/SHOULDER"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/SHOULDER"
+                android:layout_width="wrap_content"
+
+                android:layout_height="60dp"
+                android:layout_marginEnd="84dp"
+                android:layout_weight="1"
+
+                android:text="SHOULDER"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="   BIGGER\n   BETTER\nSTRONGER"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="732dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
